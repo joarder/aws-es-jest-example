@@ -24,7 +24,7 @@ Once you download the source files into your local machine, you can simply run t
 % gradle clean uber
 ```
 
-The packaged JAR file (named as ```aws-es-jest-example-latest.jar```) can be found navigating to the ```/builds/libs/``` director. 
+The packaged JAR file (named as ```aws-es-jest-example-latest.jar```) can be found navigating to the ```/build/libs/``` director. 
 
 You can run the JAR file with ```--help or -h``` option to view the usage options for this package.
 
@@ -79,6 +79,10 @@ Note [id=AWU220cCt0hvvkvNoe_5, note=Note4: do u see this - 1534223664735, create
 2018-08-14 15:14:27 INFO  AWSESJestExample:214 - Deleting index "diary" ...
 2018-08-14 15:14:28 INFO  AWSESJestExample:88 - AWS ES JEST example testing is now completed.
 ```
+
+Note that, this package has been tested with AWS ES domains running with Elasticsearch version 5.5 and 6.2 which were launched within the span of past several months of 2018.
+
+Additionally, the package by default chose the AWS region as ```us-east-1``` US North Virginia. If your target AWS ES domain is located in a different AWS region then please use the command line option ```-region``` to explicitly overwrite the default one.  
 
 ## Deployment
 
