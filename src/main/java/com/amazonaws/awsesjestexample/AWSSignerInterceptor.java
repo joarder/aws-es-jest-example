@@ -37,8 +37,8 @@ import java.util.TreeMap;
 import static org.apache.http.protocol.HttpCoreContext.HTTP_TARGET_HOST;
 
 /**
- * An {@link HttpRequestInterceptor} that signs requests using any AWS {@link Signer}
- * and {@link AWSCredentialsProvider}.
+ * A HttpRequestInterceptor that signs requests using AWS Signer
+ * and AWSCredentialsProvider.
  */
 public class AWSSignerInterceptor implements HttpRequestInterceptor {
 
@@ -47,7 +47,6 @@ public class AWSSignerInterceptor implements HttpRequestInterceptor {
     private final AWSCredentialsProvider awsCredentialsProvider;
 
     /**
-     *
      * @param service service that we're connecting to
      * @param signer particular signer implementation
      * @param awsCredentialsProvider source of AWS credentials for signing
@@ -115,7 +114,6 @@ public class AWSSignerInterceptor implements HttpRequestInterceptor {
     }
 
     /**
-     *
      * @param params list of HTTP query params as NameValuePairs
      * @return a multimap of HTTP query params
      */
